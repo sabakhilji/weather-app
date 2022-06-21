@@ -1,0 +1,77 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta name="weather app" charset="utf-8" content="weather api">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Smooch&display=swap" rel="stylesheet"> 
+    <title>Weather App</title>
+    <style>
+         body{
+          background-color: lemonchiffon;
+          font-family: 'Poppins', sans-serif;
+          height:1000px;
+          margin:2px;
+          padding:2px;
+         }
+         #main-container{
+                margin:0 auto;
+                height:100%;
+                width:500px;
+                text-align: center;
+         }
+         #output{
+            border:solid;
+            border-color:black;
+            border-radius: 2px;
+            padding: 2px;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 30px;
+            color: brown;
+         }
+         button{
+          background-color:rgba(0, 0, 255, 0.696);
+         }
+         @media (max-width:800px){
+          body{
+            font-size:  30px;
+          }
+         }
+    </style>
+</head>
+
+<body>
+  <div id="main-container">
+        <h1>Weather app built in javascript</h1>
+        <h2>Please fill in the details to get weather details</h2>
+        <form id="myForm">
+           <label for="location">Location</label><br>
+           <input type="text" id="location" placeholder="enter your location here">
+           <button type="submit">Submit</button>
+        </form>
+
+        <div id="output">
+           
+        
+        </div>
+
+      </div>
+  <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="app.js"></script>
+</body>
+
+
+</html>
